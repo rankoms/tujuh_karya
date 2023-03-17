@@ -209,7 +209,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-    color: var(--color-utama);
+    color: var(--color-utama) !important;
 }
 
 .navbar .getstarted,
@@ -427,17 +427,23 @@ h6 {
 }
 
 #hero h1 {
-    margin: 0 0 10px 0;
-    font-size: 48px;
+    font-family: 'Barlow';
+    font-style: normal;
     font-weight: 700;
-    line-height: 56px;
-    color: #0A093D;
+    font-size: 104px;
+    text-align: center;
+    color: #fff;
 }
 
 #hero h2 {
-    color: rgba(255, 255, 255, 0.6);
-    margin-bottom: 50px;
+    color: #fff;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
     font-size: 24px;
+    line-height: 160%;
+    text-align: center;
+    letter-spacing: 12px;
 }
 
 #hero .btn-get-started {
@@ -1900,4 +1906,36 @@ section {
     #footer .credits {
         padding-top: 4px;
     }
+}
+
+#about {
+    background: radial-gradient(79.63% 79.63% at 70.87% 20.37%, #1A0653 0%, #3C0046 100%)/* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    ;
+    color: #FFFFFF;
+}
+
+#about h3 {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 12px;
+    margin-bottom: 40px;
+}
+
+#about h2 {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    text-align: center;
+}
+
+#about h1 {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 84px;
+    text-align: center;
 }
