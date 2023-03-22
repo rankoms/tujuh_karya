@@ -209,7 +209,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-    color: var(--color-utama) !important;
+    color: #ffd667 !important;
 }
 
 .navbar .getstarted,
@@ -301,7 +301,7 @@ h6 {
 */
 
 .mobile-nav-toggle {
-    color: #0A093D;
+    color: #ffd667 !important;
     font-size: 28px;
     cursor: pointer;
     display: none;
@@ -310,7 +310,7 @@ h6 {
 }
 
 .mobile-nav-toggle.bi-x {
-    color: #0A093D;
+    color: #ffd667 !important;
 }
 
 @media (max-width: 991px) {
@@ -611,7 +611,7 @@ section {
 --------------------------------------------------------------*/
 
 .clients {
-    padding: 12px 0;
+    padding: 120px 0;
     text-align: center;
 }
 
@@ -1107,7 +1107,7 @@ section {
 }
 
 .portfolio .portfolio-item {
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
 }
 
 .portfolio .portfolio-item .portfolio-img {
@@ -1565,12 +1565,7 @@ section {
 --------------------------------------------------------------*/
 
 .contact .info {
-    border-top: 3px solid #A200BC;
-    border-bottom: 3px solid #A200BC;
-    padding: 30px;
-    background: #0A093D;
     width: 100%;
-    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
 }
 
 .contact .info i {
@@ -1596,10 +1591,11 @@ section {
 }
 
 .contact .info p {
-    padding: 0 0 10px 60px;
-    margin-bottom: 20px;
     font-size: 14px;
-    color: #6182ba;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    margin-left: 16px;
 }
 
 .contact .info .email p {
@@ -1637,13 +1633,40 @@ section {
     color: #0A093D;
 }
 
+.contact .kiri {
+    background: radial-gradient(79.63% 79.63% at 70.87% 20.37%, #1A0653 0%, #3C0046 100%);
+    color: #fff;
+}
+
+.contact .kiri .wrapper-text {
+    padding: 100px;
+}
+
+.contact .kiri .wrapper-text h3 {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: 12px;
+}
+
+.contact .kiri .wrapper-text h2 {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    color: #FFFFFF;
+    margin-bottom: 52px;
+}
+
+.contact .kiri .wrapper-text .phone {
+    margin-bottom: 30px;
+}
+
 .contact .php-email-form {
     width: 100%;
-    border-top: 3px solid #A200BC;
-    border-bottom: 3px solid #A200BC;
-    padding: 30px;
-    background: #0A093D;
-    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+    color: #fff;
+    margin-top: 50px;
 }
 
 .contact .php-email-form .form-group {
@@ -1811,7 +1834,7 @@ section {
 
 #footer {
     font-size: 14px;
-    background: #37517e;
+    background: #fff;
 }
 
 #footer .footer-newsletter {
@@ -1963,13 +1986,14 @@ section {
 }
 
 #footer .footer-bottom {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    color: #0A093D;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    color: #4B5D68;
+    background: #fff;
 }
 
 #footer .copyright {
-    float: left;
+    /* float: left; */
 }
 
 #footer .credits {
@@ -2032,6 +2056,117 @@ section {
     margin-bottom: 50px;
 }
 
+.wrapper-portfolio {
+    margin-top: 70px;
+}
+
+.custom-portfolio div {
+    height: 578px;
+}
+
+.custom-portfolio .short-div {
+    height: 289px;
+}
+
+.custom-portfolio div img {
+    height: 578px;
+    width: 100%;
+}
+
+.custom-portfolio .short-div img {
+    height: 289px;
+    width: 100%;
+}
+
+
+/* START CLIENT SERVICES */
+
+#client-services .bungkus-notes {
+    background: #fff;
+    padding: 60px 70px;
+    border-radius: 20px;
+}
+
+#client-services .kanan {
+    margin-left: 30px;
+}
+
+#client-services .title-name {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 160%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.005em;
+    color: #212353;
+}
+
+#client-services .title-type {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.01em;
+}
+
+#client-services .title-description {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 180%;
+    color: #4B5D68;
+    margin-top: 19px;
+}
+
+#client-services .container swiper-slide {
+    background: #25044F;
+    border-radius: 50px;
+    width: 80%;
+    height: 560px;
+    padding: 0px 70px;
+}
+
+swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+swiper-slide img {
+    display: block;
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+}
+
+#client-services .bungkus-swiper {
+    background: #25044F;
+    border-radius: 50px;
+}
+
+
+/* END CLIENT SERVICES */
+
+iframe {
+    border: 0;
+    width: 100%;
+    height: 100%;
+}
+
 @media (max-width: 767px) {
     .services .icon-box p,
     .services .icon-box h4,
@@ -2050,5 +2185,48 @@ section {
     }
     .services .why-choose-me h3 {
         padding-top: 50px;
+    }
+    .custom-portfolio div {
+        height: auto;
+    }
+    .custom-portfolio .short-div {
+        height: auto;
+    }
+    .custom-portfolio div img {
+        height: auto;
+        width: 100%;
+    }
+    .custom-portfolio .short-div img {
+        height: auto;
+        width: 100%;
+    }
+    #client-services .container swiper-slide {
+        width: 100%;
+        height: 400px;
+        padding: 0px 30px;
+    }
+    swiper-slide img {
+        display: block;
+        width: 45px;
+        height: 45px;
+        object-fit: cover;
+    }
+    #client-services .bungkus-notes {
+        padding: 10px;
+    }
+    #client-services .kanan {
+        margin-left: 18px;
+    }
+    .contact .kiri .wrapper-text {
+        padding: 10px;
+    }
+    .contact .kiri .wrapper-text .phone {
+        margin-bottom: 20px;
+    }
+    .contact .kiri .wrapper-text .address {
+        margin-bottom: 20px;
+    }
+    iframe {
+        height: 400px;
     }
 }
