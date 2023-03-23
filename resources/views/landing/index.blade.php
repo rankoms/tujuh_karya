@@ -41,9 +41,10 @@
 		</section><!-- End About Us Section -->
 
 		<!-- ======= Services Section ======= -->
-		<section id="services" class="services ">
+		<section id="services" class="services position-relative">
+			<img src="{{ asset('img/floating/floating_1.png') }}" alt="Floating 1" class="position-absolute floating-1">
+			<img src="{{ asset('img/floating/floating_2.png') }}" alt="Floating 2" class="position-absolute floating-2">
 			<div class="container" data-aos="fade-up">
-
 				<h3>WHAT WE DO</h3>
 				<h2>We do it at its best</h2>
 				<p class="p-title">We are the pioneer and leading company in managing and organizing an international music festival
@@ -94,7 +95,10 @@
 				</div>
 
 			</div>
+		</section>
+		<section class="services position-relative pt-0">
 
+			<img src="{{ asset('img/floating/floating_3.png') }}" alt="Floating 1" class="position-absolute floating-3 d-none">
 			<div class="container" data-aos="fade-up">
 
 				<h3>OUR APPROACH</h3>
@@ -121,7 +125,9 @@
 					</div>
 				</div>
 			</div>
+		</section>
 
+		<section class="services position-relative pt-0">
 			<div class="why-choose-me" data-aos="fade-up">
 				<h3>WHY CHOOSE TUJUH KARYA SINERGI PRODUCTION?</h3>
 				<h2>We listen. We discuss. <br />We advise.We Provide.</h2>
@@ -171,9 +177,10 @@
 						<div class="col-lg-2 col-sm-12 offset-lg-1 p-0">
 							<div class="row">
 								<div class="col-12 ">
-									<div class="portfolio-img"><img src="{{ asset('img/portfolio/images_1.png') }}" class="img-fluid"
-											alt="">
-									</div>
+									<a href="{{ asset('img/portfolio/images_1.png') }}" data-gallery="portfolioGallery"
+										class="portfolio-lightbox preview-link portfolio-img"><img src="{{ asset('img/portfolio/images_1.png') }}"
+											class="img-fluid" alt="">
+									</a>
 								</div>
 							</div>
 						</div>
@@ -183,33 +190,40 @@
 									<div class="row">
 
 										<div class="col-lg-12 col-sm-12 short-div">
-											<div class="portfolio-img "><img src="{{ asset('img/portfolio/images_2.png') }}" class="img-fluid"
-													alt="">
-											</div>
+											<a href="{{ asset('img/portfolio/images_2.png') }}" data-gallery="portfolioGallery"
+												class="portfolio-lightbox preview-link portfolio-img"><img src="{{ asset('img/portfolio/images_2.png') }}"
+													class="img-fluid" alt="">
+											</a>
 										</div>
 										<div class="col-lg-12 col-sm-12 short-div">
-											<div class="portfolio-img "><img src="{{ asset('img/portfolio/images_3.png') }}" class="img-fluid"
-													alt="">
-											</div>
+
+											<a href="{{ asset('img/portfolio/images_3.png') }}" data-gallery="portfolioGallery"
+												class="portfolio-lightbox preview-link portfolio-img"><img src="{{ asset('img/portfolio/images_3.png') }}"
+													class="img-fluid" alt="">
+											</a>
 										</div>
 									</div>
 								</div>
 								<div class="col-lg-8 col-sm-12 p-0">
-									<div class="portfolio-img"><img src="{{ asset('img/portfolio/images_4.png') }}" class="img-fluid"
-											alt="">
-									</div>
+									<a href="{{ asset('img/portfolio/images_4.png') }}" data-gallery="portfolioGallery"
+										class="portfolio-lightbox preview-link portfolio-img"><img src="{{ asset('img/portfolio/images_4.png') }}"
+											class="img-fluid" alt="">
+									</a>
 								</div>
 							</div>
 						</div>
 						<div class="col-lg-2 col-sm-12 p-0">
 							<div class="row">
 								<div class="col-sm-12">
-									<div class="portfolio-img short-div"><img src="{{ asset('img/portfolio/images_5.png') }}" class="img-fluid"
-											alt="">
-									</div>
-									<div class="portfolio-img short-div"><img src="{{ asset('img/portfolio/images_6.png') }}" class="img-fluid"
-											alt="">
-									</div>
+
+									<a href="{{ asset('img/portfolio/images_5.png') }}" data-gallery="portfolioGallery"
+										class="portfolio-lightbox preview-link portfolio-img short-div"><img
+											src="{{ asset('img/portfolio/images_5.png') }}" class="img-fluid" alt="">
+									</a>
+									<a href="{{ asset('img/portfolio/images_6.png') }}" data-gallery="portfolioGallery"
+										class="portfolio-lightbox preview-link portfolio-img short-div"><img
+											src="{{ asset('img/portfolio/images_6.png') }}" class="img-fluid" alt="">
+									</a>
 								</div>
 							</div>
 						</div>
@@ -220,34 +234,39 @@
 						<div class="col-lg-2 col-sm-12 p-0 offset-lg-1 ">
 							<div class="row">
 								<div class="col-sm-12">
-									<div class="portfolio-img short-div"><img src="{{ asset('img/portfolio/images_7.png') }}" class="img-fluid"
-											alt="">
-									</div>
-									<div class="portfolio-img short-div"><img src="{{ asset('img/portfolio/images_8.png') }}" class="img-fluid"
-											alt="">
-									</div>
+									<a href="{{ asset('img/portfolio/images_7.png') }}" data-gallery="portfolioGallery"
+										class="portfolio-lightbox preview-link portfolio-img short-div"><img
+											src="{{ asset('img/portfolio/images_7.png') }}" class="img-fluid" alt="">
+									</a>
+									<a href="{{ asset('img/portfolio/images_8.png') }}" data-gallery="portfolioGallery"
+										class="portfolio-lightbox preview-link portfolio-img short-div"><img
+											src="{{ asset('img/portfolio/images_8.png') }}" class="img-fluid" alt="">
+									</a>
 								</div>
 							</div>
 						</div>
 						<div class="col-lg-6 col-sm-12">
 							<div class="row">
 								<div class="col-lg-8 col-sm-12 p-0">
-									<div class="portfolio-img"><img src="{{ asset('img/portfolio/images_9.png') }}" class="img-fluid"
-											alt="">
-									</div>
+									<a href="{{ asset('img/portfolio/images_9.png') }}" data-gallery="portfolioGallery"
+										class="portfolio-lightbox preview-link portfolio-img"><img src="{{ asset('img/portfolio/images_9.png') }}"
+											class="img-fluid" alt="">
+									</a>
 								</div>
 								<div class="col-lg-4 col-sm-12 p-0">
 									<div class="row">
 
 										<div class="col-lg-12 col-sm-12 short-div">
-											<div class="portfolio-img "><img src="{{ asset('img/portfolio/images_10.png') }}" class="img-fluid"
-													alt="">
-											</div>
+											<a href="{{ asset('img/portfolio/images_10.png') }}" data-gallery="portfolioGallery"
+												class="portfolio-lightbox preview-link portfolio-img"><img
+													src="{{ asset('img/portfolio/images_10.png') }}" class="img-fluid" alt="">
+											</a>
 										</div>
 										<div class="col-lg-12 col-sm-12 short-div">
-											<div class="portfolio-img "><img src="{{ asset('img/portfolio/images_11.png') }}" class="img-fluid"
-													alt="">
-											</div>
+											<a href="{{ asset('img/portfolio/images_11.png') }}" data-gallery="portfolioGallery"
+												class="portfolio-lightbox preview-link portfolio-img"><img
+													src="{{ asset('img/portfolio/images_11.png') }}" class="img-fluid" alt="">
+											</a>
 										</div>
 									</div>
 								</div>
@@ -256,9 +275,10 @@
 						<div class="col-lg-2 col-sm-12 p-0">
 							<div class="row">
 								<div class="col-12 ">
-									<div class="portfolio-img"><img src="{{ asset('img/portfolio/images_12.png') }}" class="img-fluid"
-											alt="">
-									</div>
+									<a href="{{ asset('img/portfolio/images_12.png') }}" data-gallery="portfolioGallery"
+										class="portfolio-lightbox preview-link portfolio-img"><img src="{{ asset('img/portfolio/images_12.png') }}"
+											class="img-fluid" alt="">
+									</a>
 								</div>
 							</div>
 						</div>

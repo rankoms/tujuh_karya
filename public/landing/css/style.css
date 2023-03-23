@@ -611,7 +611,7 @@ section {
 --------------------------------------------------------------*/
 
 .clients {
-    padding: 120px 0;
+    padding: 100px 0;
     text-align: center;
 }
 
@@ -2167,6 +2167,25 @@ iframe {
     height: 100%;
 }
 
+#services .floating-1 {
+    width: 186px;
+    height: 183px;
+    top: 0;
+    left: 0;
+}
+
+#services .floating-2 {
+    right: 0;
+    width: 138px;
+    height: 183px;
+    top: 296px;
+}
+
+.services .floating-3 {
+    height: 100%;
+    left: 0;
+}
+
 @media (max-width: 767px) {
     .services .icon-box p,
     .services .icon-box h4,
@@ -2228,5 +2247,10 @@ iframe {
     }
     iframe {
         height: 400px;
+    }
+    .floating-1,
+    .floating-2,
+    .floating-3 {
+        display: none;
     }
 }
