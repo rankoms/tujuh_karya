@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Helpers\ResponseFormatter;
 use App\Models\Contact;
 use Illuminate\Http\Request;
 
@@ -35,7 +36,25 @@ class ContactController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        request()->validate([
+            'name' => ['required'],
+            'email' => ['required', 'email'],
+            'phone' => ['required'],
+            'message' => ['required', 'min:5'],
+        ]);
+        $name = $request->name;
+        $email = $request->email;
+        $phone = $request->phone;
+        $message = $request->message;
+
+        $contact = new Contact();
+        $contact->name = $name;
+        $contact->email = $email;
+        $contact->phone = $phone;
+        $contact->message = $message;
+        $contact->status = 0;
+        $contact->save();
+        return ResponseFormatter::success(null, 'Success');
     }
 
     /**

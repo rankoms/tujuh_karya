@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -22,6 +23,6 @@ use Illuminate\Support\Facades\Route;
 Auth::routes();
 
 Route::get('/', [HomeController::class, 'index'])->name('index');
-
+Route::post('/contact/store', [ContactController::class, 'store'])->name('contact.store');
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

@@ -402,7 +402,8 @@
 							</div>
 
 
-							<form action="forms/contact.php" method="post" role="form" class="php-email-form">
+							<form id="formContact" class="php-email-form">
+								@csrf
 								<div class="form-group">
 									<input type="text" name="name" class="form-control" id="name" placeholder="Name" required>
 								</div>
@@ -414,11 +415,6 @@
 								</div>
 								<div class="form-group">
 									<textarea class="form-control" name="message" rows="10" placeholder="Message" required></textarea>
-								</div>
-								<div class="my-3">
-									<div class="loading">Loading</div>
-									<div class="error-message"></div>
-									<div class="sent-message">Your message has been sent. Thank you!</div>
 								</div>
 								<div class="text-end"><button type="submit">Sumbit</button></div>
 							</form>
@@ -462,6 +458,47 @@
 		</section><!-- End Contact Section -->
 
 	</main><!-- End #main -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+		integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
 	@include('landing.footer')
+
+	<script>
+		$('#formContact').on('submit', function(e) {
+			e.preventDefault();
+			var formData = $(this).serialize();
+			$.ajax({
+				url: "{{ route('contact.store') }}",
+				method: 'POST',
+				data: formData,
+				global: false,
+				async: false,
+				dataType: 'json',
+				beforeSend: function() {
+
+				},
+				success: function(response) {
+					const meta = response.meta;
+					Swal.fire(
+						'Success',
+						meta.message,
+						'success'
+					).then((result) => {
+						if (result.isConfirmed) {}
+					});
+				},
+				error: function(error) {
+
+					const data = JSON.parse(error.responseText);
+
+					Swal.fire(
+						'Fail',
+						error.responseJSON.message,
+						'error'
+					);
+				},
+			});
+		});
+	</script>
 @endsection

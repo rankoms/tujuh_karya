@@ -77,7 +77,7 @@
 	<script src="{{ asset('landing/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
 	<script src="{{ asset('landing/vendor/swiper/swiper-bundle.min.js') }}"></script>
 	<script src="{{ asset('landing/vendor/waypoints/noframework.waypoints.js') }}"></script>
-	<script src="{{ asset('landing/vendor/php-email-form/validate.js') }}"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 	<!-- Template Main JS File -->
 	<script src="{{ asset('landing/js/main.js') }}"></script>
