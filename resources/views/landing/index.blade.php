@@ -426,20 +426,20 @@
 							<div class="d-flex wrapper-sosmed">
 
 								<div class="address">
-									<a href="" class="me-3">
+									<a href="{{ config('config_page.sosmed_facebook') }}" class="me-3">
 
 										<i class="bi bi-facebook"></i>
 									</a>
 								</div>
 
 								<div class="email">
-									<a href="" class="me-3">
+									<a href="{{ config('config_page.sosmed_twitter') }}" class="me-3">
 										<i class="bi bi-twitter"></i>
 									</a>
 								</div>
 
 								<div class="phone">
-									<a href="" class="me-3">
+									<a href="{{ config('config_page.sosmed_instagram') }}" class="me-3">
 										<i class="bi bi-instagram"></i>
 									</a>
 								</div>
