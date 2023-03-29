@@ -41,6 +41,9 @@
 	<link
 		href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
 		rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+		rel="stylesheet">
 	<!-- Vendor CSS Files -->
 	<link href="{{ asset('landing/vendor/aos/aos.css') }}" rel="stylesheet">
 	<link href="{{ asset('landing/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
@@ -83,6 +86,49 @@
 	<script src="{{ asset('landing/js/main.js') }}"></script>
 
 	@yield('js')
+	<script>
+		$('#formContact').on('submit', function(e) {
+			e.preventDefault();
+			var formData = $(this).serialize();
+			$.ajax({
+				url: "{{ route('contact.store') }}",
+				method: 'POST',
+				data: formData,
+				global: false,
+				async: false,
+				dataType: 'json',
+				beforeSend: function() {
+					$('#btn-save').attr('disabled', true);
+					$('#btn-save').html('Loading');
+				},
+				success: function(response) {
+					const meta = response.meta;
+					Swal.fire(
+						'Success',
+						meta.message,
+						'success'
+					).then((result) => {
+						if (result.isConfirmed) {}
+					});
+				},
+				error: function(error) {
+
+					const data = JSON.parse(error.responseText);
+
+					Swal.fire(
+						'Fail',
+						error.responseJSON.message,
+						'error'
+					);
+				},
+				complete: function(jqXHR, textStatus) {
+					$('#formContact').trigger("reset");
+					$('#btn-save').attr('disabled', false);
+					$('#btn-save').html('Save');
+				}
+			});
+		});
+	</script>
 
 </body>
 

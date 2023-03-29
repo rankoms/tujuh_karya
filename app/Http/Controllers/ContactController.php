@@ -3,8 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Helpers\ResponseFormatter;
+use App\Mail\SendMail;
 use App\Models\Contact;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class ContactController extends Controller
 {
@@ -47,13 +49,14 @@ class ContactController extends Controller
         $phone = $request->phone;
         $message = $request->message;
 
-        $contact = new Contact();
-        $contact->name = $name;
-        $contact->email = $email;
-        $contact->phone = $phone;
-        $contact->message = $message;
-        $contact->status = 0;
-        $contact->save();
+        // $contact = new Contact();
+        // $contact->name = $name;
+        // $contact->email = $email;
+        // $contact->phone = $phone;
+        // $contact->message = $message;
+        // $contact->status = 0;
+        // $contact->save();
+        Mail::to(config('config_page.email'))->send(new SendMail($name, $email, $phone, $message));
         return ResponseFormatter::success(null, 'Success');
     }
 
