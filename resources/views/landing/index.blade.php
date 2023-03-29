@@ -284,6 +284,7 @@
 					</div>
 				</div>
 
+				<a href="{{ route('galery') }}" class="text-center see-more">See More</a>
 			</div>
 		</section><!-- End Portfolio Section -->
 
@@ -312,7 +313,6 @@
 					</div>
 
 				</div>
-
 			</div>
 		</section><!-- End Cliens Section -->
 
