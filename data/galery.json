@@ -1,0 +1,37 @@
+{
+    "baris-awal": [{
+        "images": "images_awal_1.png"
+    }, {
+        "images": "images_awal_2.png"
+    }, {
+        "images": "images_awal_3.png"
+    }, {
+        "images": "images_awal_4.png"
+    }],
+    "baris-tengah": [{
+        "images": "images_tengah_1.png"
+    }, {
+        "images": "images_tengah_2.png"
+    }, {
+        "images": "images_tengah_3.png"
+    }, {
+        "images": "images_tengah_4.png"
+    }, {
+        "images": "images_tengah_5.png"
+    }, {
+        "images": "images_tengah_6.png"
+    }, {
+        "images": "images_tengah_7.png"
+    }, {
+        "images": "images_tengah_8.png"
+    }],
+    "baris-akhir": [{
+        "images": "images_akhir_1.png"
+    }, {
+        "images": "images_akhir_2.png"
+    }, {
+        "images": "images_akhir_3.png"
+    }, {
+        "images": "images_akhir_4.png"
+    }]
+}
