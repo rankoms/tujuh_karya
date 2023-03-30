@@ -10,8 +10,8 @@
 			<div class="row">
 				<div class="col-lg-12 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up"
 					data-aos-delay="200">
-					<h2>WE CREATE EVENT</h2>
-					<h1>" EXTRADONARY "</h1>
+					<h2>{{ \config('config_page.wording_hero_h2') }}</h2>
+					<h1>{{ \config('config_page.wording_hero_h1') }}</h1>
 				</div>
 			</div>
 		</div>
@@ -24,16 +24,15 @@
 		<!-- ======= About Us Section ======= -->
 		<section id="about" class="about">
 			<div class="container" data-aos="fade-up">
-				<h3>WELCOME TO TUJUH KARYA SINERGI</h3>
+				<h3>{{ config('config_page.wording_about_h3') }}</h3>
 
 				<div class="row content">
 					<div class="col-lg-12 p-4
 					">
 						<h2>
-							Lorem Ipsum for your design, website, and copywriting works. Use our tool to generate chunks of text that is free
-							from repetition and copyright claims. 3D Images Increase Sales.
+							{{ config('config_page.wording_about_h2') }}
 						</h2>
-						<h1>" We create great events "</h1>
+						<h1>{{ config('config_page.wording_about_h1') }}</h1>
 					</div>
 				</div>
 
@@ -285,6 +284,7 @@
 					</div>
 				</div>
 
+				<a href="{{ route('galery') }}" class="text-center see-more">See More</a>
 			</div>
 		</section><!-- End Portfolio Section -->
 
@@ -313,7 +313,6 @@
 					</div>
 
 				</div>
-
 			</div>
 		</section><!-- End Cliens Section -->
 
@@ -383,99 +382,7 @@
 			</div>
 		</section>
 
-
-		<!-- ======= Contact Section ======= -->
-		<section id="contact" class="contact p-0">
-			<div data-aos="fade-up">
-				<div class="row">
-					<div class="col-lg-7 mt-5 mt-lg-0 align-items-stretch kiri p-4">
-						<div class="wrapper-text info">
-
-							<h3>SAY HELLO!</h3>
-
-							<h2>We would like to hear from you.</h2>
-
-							<div class="row">
-								<div class="col-lg-4">
-
-									<div class="phone d-flex">
-										<img src="{{ asset('img/contact/phone.svg') }}" alt="Phone">
-										<p>+1 5589 55488 55s</p>
-									</div>
-								</div>
-								<div class="col-lg-8">
-
-									<div class="address d-flex">
-										<img src="{{ asset('img/contact/address.svg') }}" alt="Address">
-										<p>A108 Adam Street, New York, NY 535022</p>
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-lg-12">
-
-									<div class="email d-flex align-self-baseline">
-										<img src="{{ asset('img/contact/email.svg') }}" alt="Email">
-										<p>info@example.com</p>
-									</div>
-								</div>
-							</div>
-
-
-							<form id="formContact" class="php-email-form">
-								@csrf
-								<div class="form-group">
-									<input type="text" name="name" class="form-control" id="name" placeholder="Name" required>
-								</div>
-								<div class="form-group">
-									<input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
-								</div>
-								<div class="form-group">
-									<input type="text" class="form-control" name="phone" id="phone" placeholder="Phone" required>
-								</div>
-								<div class="form-group">
-									<textarea class="form-control" name="message" rows="10" placeholder="Message" required></textarea>
-								</div>
-								<div class="text-end"><button type="submit">Sumbit</button></div>
-							</form>
-
-							<div class="d-flex wrapper-sosmed">
-
-								<div class="address">
-									<a href="{{ config('config_page.sosmed_facebook') }}" class="me-3">
-
-										<i class="bi bi-facebook"></i>
-									</a>
-								</div>
-
-								<div class="email">
-									<a href="{{ config('config_page.sosmed_twitter') }}" class="me-3">
-										<i class="bi bi-twitter"></i>
-									</a>
-								</div>
-
-								<div class="phone">
-									<a href="{{ config('config_page.sosmed_instagram') }}" class="me-3">
-										<i class="bi bi-instagram"></i>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-5 d-flex align-items-stretch p-0">
-						<div class="info">
-
-							<iframe
-								src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
-								frameborder="0" allowfullscreen></iframe>
-						</div>
-
-					</div>
-
-				</div>
-
-			</div>
-		</section><!-- End Contact Section -->
+		@include('landing.contact')
 
 	</main><!-- End #main -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
@@ -483,42 +390,4 @@
 		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
 	@include('landing.footer')
-
-	<script>
-		$('#formContact').on('submit', function(e) {
-			e.preventDefault();
-			var formData = $(this).serialize();
-			$.ajax({
-				url: "{{ route('contact.store') }}",
-				method: 'POST',
-				data: formData,
-				global: false,
-				async: false,
-				dataType: 'json',
-				beforeSend: function() {
-
-				},
-				success: function(response) {
-					const meta = response.meta;
-					Swal.fire(
-						'Success',
-						meta.message,
-						'success'
-					).then((result) => {
-						if (result.isConfirmed) {}
-					});
-				},
-				error: function(error) {
-
-					const data = JSON.parse(error.responseText);
-
-					Swal.fire(
-						'Fail',
-						error.responseJSON.message,
-						'error'
-					);
-				},
-			});
-		});
-	</script>
 @endsection
