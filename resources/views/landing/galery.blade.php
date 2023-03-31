@@ -29,9 +29,9 @@
 						<div class="col-lg-3 col-sm-12 ">
 							<div class="row">
 								<div class="col-12 ">
-									<a href="{{ asset('img/portfolio/images_1.png') }}" data-gallery="portfolioGallery"
-										class="portfolio-lightbox preview-link portfolio-img"><img src="{{ asset('img/portfolio/images_1.png') }}"
-											class="img-fluid" alt="">
+									<a href="{{ asset('img/portfolio/' . $galery['baris-awal'][0]['images']) }}" data-gallery="portfolioGallery"
+										class="portfolio-lightbox preview-link portfolio-img"><img
+											src="{{ asset('img/portfolio/' . $galery['baris-awal'][0]['images']) }}" class="img-fluid" alt="Galery">
 									</a>
 								</div>
 							</div>
@@ -42,16 +42,17 @@
 									<div class="row">
 
 										<div class="col-lg-12 col-sm-12 short-div">
-											<a href="{{ asset('img/portfolio/images_2.png') }}" data-gallery="portfolioGallery"
-												class="portfolio-lightbox preview-link portfolio-img"><img src="{{ asset('img/portfolio/images_2.png') }}"
-													class="img-fluid img-atas" alt="">
+											<a href="{{ asset('img/portfolio/' . $galery['baris-awal'][1]['images']) }}" data-gallery="portfolioGallery"
+												class="portfolio-lightbox preview-link portfolio-img"><img
+													src="{{ asset('img/portfolio/' . $galery['baris-awal'][1]['images']) }}" class="img-fluid img-atas"
+													alt="Galery">
 											</a>
 										</div>
 										<div class="col-lg-12 col-sm-12 short-div">
 
-											<a href="{{ asset('img/portfolio/images_3.png') }}" data-gallery="portfolioGallery"
-												class="portfolio-lightbox preview-link portfolio-img"><img src="{{ asset('img/portfolio/images_3.png') }}"
-													class="img-fluid" alt="">
+											<a href="{{ asset('img/portfolio/' . $galery['baris-awal'][2]['images']) }}" data-gallery="portfolioGallery"
+												class="portfolio-lightbox preview-link portfolio-img"><img
+													src="{{ asset('img/portfolio/' . $galery['baris-awal'][2]['images']) }}" class="img-fluid" alt="Galery">
 											</a>
 										</div>
 									</div>
@@ -61,72 +62,32 @@
 						<div class="col-lg-6 col-sm-12">
 							<div class="row">
 								<div class="col-sm-12">
-									<a href="{{ asset('img/portfolio/images_5.png') }}" data-gallery="portfolioGallery"
-										class="portfolio-lightbox preview-link portfolio-img "><img src="{{ asset('img/portfolio/images_5.png') }}"
-											class="img-fluid" alt="">
+									<a href="{{ asset('img/portfolio/' . $galery['baris-awal'][3]['images']) }}" data-gallery="portfolioGallery"
+										class="portfolio-lightbox preview-link portfolio-img "><img
+											src="{{ asset('img/portfolio/' . $galery['baris-awal'][3]['images']) }}" class="img-fluid" alt="Galery">
 									</a>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="row custom-portfolio gx-3 gy-1" data-aos="fade-up" data-aos-delay="200">
-						<div class="col-lg-3 col-sm-12 short-div">
-							<a href="{{ asset('img/portfolio/images_2.png') }}" data-gallery="portfolioGallery"
-								class="portfolio-lightbox preview-link portfolio-img"><img src="{{ asset('img/portfolio/images_2.png') }}"
-									class="img-fluid img-atas" alt="">
-							</a>
-						</div>
-						<div class="col-lg-3 col-sm-12 short-div">
-							<a href="{{ asset('img/portfolio/images_2.png') }}" data-gallery="portfolioGallery"
-								class="portfolio-lightbox preview-link portfolio-img"><img src="{{ asset('img/portfolio/images_2.png') }}"
-									class="img-fluid img-atas" alt="">
-							</a>
-						</div>
-						<div class="col-lg-3 col-sm-12 short-div">
-							<a href="{{ asset('img/portfolio/images_2.png') }}" data-gallery="portfolioGallery"
-								class="portfolio-lightbox preview-link portfolio-img"><img src="{{ asset('img/portfolio/images_2.png') }}"
-									class="img-fluid img-atas" alt="">
-							</a>
-						</div>
-						<div class="col-lg-3 col-sm-12 short-div">
-							<a href="{{ asset('img/portfolio/images_2.png') }}" data-gallery="portfolioGallery"
-								class="portfolio-lightbox preview-link portfolio-img"><img src="{{ asset('img/portfolio/images_2.png') }}"
-									class="img-fluid img-atas" alt="">
-							</a>
-						</div>
-						<div class="col-lg-3 col-sm-12 short-div">
-							<a href="{{ asset('img/portfolio/images_2.png') }}" data-gallery="portfolioGallery"
-								class="portfolio-lightbox preview-link portfolio-img"><img src="{{ asset('img/portfolio/images_2.png') }}"
-									class="img-fluid img-atas" alt="">
-							</a>
-						</div>
-						<div class="col-lg-3 col-sm-12 short-div">
-							<a href="{{ asset('img/portfolio/images_2.png') }}" data-gallery="portfolioGallery"
-								class="portfolio-lightbox preview-link portfolio-img"><img src="{{ asset('img/portfolio/images_2.png') }}"
-									class="img-fluid img-atas" alt="">
-							</a>
-						</div>
-						<div class="col-lg-3 col-sm-12 short-div">
-							<a href="{{ asset('img/portfolio/images_2.png') }}" data-gallery="portfolioGallery"
-								class="portfolio-lightbox preview-link portfolio-img"><img src="{{ asset('img/portfolio/images_2.png') }}"
-									class="img-fluid img-atas" alt="">
-							</a>
-						</div>
-						<div class="col-lg-3 col-sm-12 short-div">
-							<a href="{{ asset('img/portfolio/images_2.png') }}" data-gallery="portfolioGallery"
-								class="portfolio-lightbox preview-link portfolio-img"><img src="{{ asset('img/portfolio/images_2.png') }}"
-									class="img-fluid img-atas" alt="">
-							</a>
-						</div>
+						@foreach ($galery['baris-tengah'] as $key => $value)
+							<div class="col-lg-3 col-sm-12 short-div">
+								<a href="{{ asset('img/portfolio/' . $value['images']) }}" data-gallery="portfolioGallery"
+									class="portfolio-lightbox preview-link portfolio-img"><img
+										src="{{ asset('img/portfolio/' . $value['images']) }}" class="img-fluid img-atas" alt="Galery">
+								</a>
+							</div>
+						@endforeach
 					</div>
 					<div class="row custom-portfolio gx-3" data-aos="fade-up" data-aos-delay="200">
 
 						<div class="col-lg-3 col-sm-12 ">
 							<div class="row">
 								<div class="col-12 ">
-									<a href="{{ asset('img/portfolio/images_1.png') }}" data-gallery="portfolioGallery"
-										class="portfolio-lightbox preview-link portfolio-img"><img src="{{ asset('img/portfolio/images_1.png') }}"
-											class="img-fluid" alt="">
+									<a href="{{ asset('img/portfolio/' . $galery['baris-akhir'][0]['images']) }}" data-gallery="portfolioGallery"
+										class="portfolio-lightbox preview-link portfolio-img"><img
+											src="{{ asset('img/portfolio/' . $galery['baris-akhir'][0]['images']) }}" class="img-fluid" alt="Galery">
 									</a>
 								</div>
 							</div>
@@ -137,16 +98,17 @@
 									<div class="row">
 
 										<div class="col-lg-12 col-sm-12 short-div">
-											<a href="{{ asset('img/portfolio/images_2.png') }}" data-gallery="portfolioGallery"
-												class="portfolio-lightbox preview-link portfolio-img"><img src="{{ asset('img/portfolio/images_2.png') }}"
-													class="img-fluid img-atas" alt="">
+											<a href="{{ asset('img/portfolio/' . $galery['baris-akhir'][1]['images']) }}" data-gallery="portfolioGallery"
+												class="portfolio-lightbox preview-link portfolio-img"><img
+													src="{{ asset('img/portfolio/' . $galery['baris-awal'][1]['images']) }}" class="img-fluid img-atas"
+													alt="Galery">
 											</a>
 										</div>
 										<div class="col-lg-12 col-sm-12 short-div">
 
-											<a href="{{ asset('img/portfolio/images_3.png') }}" data-gallery="portfolioGallery"
-												class="portfolio-lightbox preview-link portfolio-img"><img src="{{ asset('img/portfolio/images_3.png') }}"
-													class="img-fluid" alt="">
+											<a href="{{ asset('img/portfolio/' . $galery['baris-akhir'][2]['images']) }}" data-gallery="portfolioGallery"
+												class="portfolio-lightbox preview-link portfolio-img"><img
+													src="{{ asset('img/portfolio/' . $galery['baris-akhir'][2]['images']) }}" class="img-fluid" alt="Galery">
 											</a>
 										</div>
 									</div>
@@ -156,9 +118,9 @@
 						<div class="col-lg-6 col-sm-12">
 							<div class="row">
 								<div class="col-sm-12">
-									<a href="{{ asset('img/portfolio/images_5.png') }}" data-gallery="portfolioGallery"
-										class="portfolio-lightbox preview-link portfolio-img "><img src="{{ asset('img/portfolio/images_5.png') }}"
-											class="img-fluid" alt="">
+									<a href="{{ asset('img/portfolio/' . $galery['baris-akhir'][3]['images']) }}" data-gallery="portfolioGallery"
+										class="portfolio-lightbox preview-link portfolio-img "><img
+											src="{{ asset('img/portfolio/' . $galery['baris-akhir'][3]['images']) }}" class="img-fluid" alt="Galery">
 									</a>
 								</div>
 							</div>

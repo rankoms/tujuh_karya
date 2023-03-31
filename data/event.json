@@ -1,0 +1,79 @@
+{
+    "slider": [
+        "slider-1.png", "slider-2.png", "slider-3.png"
+    ],
+    "active": [{
+        "location": "Jakarta",
+        "images": "gambar-1.png",
+        "tanggal": "5 Des 2020",
+        "link": "",
+        "deskripsi": "Lipsum generator: Lorem Ipsum - All the facts"
+
+    }, {
+        "location": "Jakarta",
+        "images": "gambar-2.png",
+        "tanggal": "5 Des 2020",
+        "link": "",
+        "deskripsi": "Lipsum generator: Lorem Ipsum - All the facts"
+
+    }, {
+        "location": "Jakarta",
+        "images": "gambar-3.png",
+        "tanggal": "5 Des 2020",
+        "link": "",
+        "deskripsi": "Lipsum generator: Lorem Ipsum - All the facts"
+
+    }, {
+        "location": "Jakarta",
+        "images": "gambar-4.png",
+        "tanggal": "5 Des 2020",
+        "link": "",
+        "deskripsi": "Lipsum generator: Lorem Ipsum - All the facts"
+
+    }, {
+        "location": "Jakarta",
+        "images": "gambar-5.png",
+        "tanggal": "5 Des 2020",
+        "link": "",
+        "deskripsi": "Lipsum generator: Lorem Ipsum - All the facts"
+    }, {
+        "location": "Jakarta",
+        "images": "gambar-6.png",
+        "tanggal": "5 Des 2020",
+        "link": "",
+        "deskripsi": "Lipsum generator: Lorem Ipsum - All the facts"
+    }, {
+        "location": "Jakarta",
+        "images": "gambar-7.png",
+        "tanggal": "5 Des 2020",
+        "link": "",
+        "deskripsi": "Lipsum generator: Lorem Ipsum - All the facts"
+    }, {
+        "location": "Jakarta",
+        "images": "gambar-8.png",
+        "tanggal": "5 Des 2020",
+        "link": "",
+        "deskripsi": "Lipsum generator: Lorem Ipsum - All the facts"
+    }],
+    "pass": [{
+        "location": "Jakarta",
+        "images": "pass-1.png",
+        "tanggal": "5 Des 2020",
+        "deskripsi": "Lipsum generator: Lorem Ipsum - All the facts"
+    }, {
+        "location": "Jakarta",
+        "images": "pass-2.png",
+        "tanggal": "5 Des 2020",
+        "deskripsi": "Lipsum generator: Lorem Ipsum - All the facts"
+    }, {
+        "location": "Jakarta",
+        "images": "pass-3.png",
+        "tanggal": "5 Des 2020",
+        "deskripsi": "Lipsum generator: Lorem Ipsum - All the facts"
+    }, {
+        "location": "Jakarta",
+        "images": "pass-4.png",
+        "tanggal": "5 Des 2020",
+        "deskripsi": "Lipsum generator: Lorem Ipsum - All the facts"
+    }]
+}

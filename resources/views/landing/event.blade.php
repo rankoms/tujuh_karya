@@ -20,15 +20,11 @@
 
 				<swiper-container class="mySwiper" space-between="30" slides-per-view="auto" pagination="true"
 					pagination-clickable="true" navigation="true" loop="true" slides-per-view="2" initial-slide="2">
-					<swiper-slide>
-						<img src="{{ asset('img/event/slider-1.png') }}" alt="notes">
-					</swiper-slide>
-					<swiper-slide class="swiper-slide-active">
-						<img src="{{ asset('img/event/slider-2.png') }}" alt="notes">
-					</swiper-slide>
-					<swiper-slide>
-						<img src="{{ asset('img/event/slider-3.png') }}" alt="notes">
-					</swiper-slide>
+					@foreach ($event['slider'] as $key => $value)
+						<swiper-slide>
+							<img src="{{ asset('img/event/' . $value) }}" alt="notes">
+						</swiper-slide>
+					@endforeach
 				</swiper-container>
 			</div>
 			<div class="container" data-aos="fade-up">
@@ -36,50 +32,47 @@
 				<h2 class="text-center">Active</h2>
 
 				<div class="row event-list past pt-4">
-					@for ($i = 0; $i <= 8; $i++)
-						<div class="col-xl-3 col-md-6 col-sm-12 align-items-stretch mt-4 mt-md-0 mb-4">
+					@foreach ($event['active'] as $key => $value)
+						<a href="{{ $value['link'] }}" class="col-xl-3 col-md-6 col-sm-12 align-items-stretch mt-4 mt-md-0 mb-4">
 							<div>
-								<img src="{{ asset('img/event/gambar-1.png') }}" alt="">
+								<img src="{{ asset('img/event/' . $value['images']) }}" alt="">
 							</div>
 							<div class="wrapper-event">
 								<div class="row wrapper-event-row">
-									<div class="col-6 location"><i class="fa fa-calendar-alt me-2"></i> 5 Des 2020</div>
-									<div class="col-6 text-end location"><i class="fa fa-location-dot me-2"></i> Jakarta</div>
+									<div class="col-6 location"><i class="fa fa-calendar-alt me-2"></i> {{ $value['tanggal'] }}</div>
+									<div class="col-6 text-end location"><i class="fa fa-location-dot me-2"></i> {{ $value['location'] }}</div>
 								</div>
 								<div class="row">
-									<h4>Lipsum generator: Lorem Ipsum - All the facts</h4>
+									<h4>{{ $value['deskripsi'] }}</h4>
 								</div>
 							</div>
 							<div class="buy-now">
 								Buy Now
 							</div>
-						</div>
-					@endfor
+						</a>
+					@endforeach
 				</div>
 			</div>
 			<div class="container" data-aos="fade-up">
 				<h3 class="text-center">Event</h3>
 				<h2 class="text-center">Past</h2>
 				<div class="row event-list pt-4">
-					@for ($i = 0; $i <= 8; $i++)
+					@foreach ($event['pass'] as $key => $value)
 						<div class="col-xl-3 col-md-6 col-sm-12 align-items-stretch mt-4 mt-md-0 mb-4">
 							<div>
-								<img src="{{ asset('img/event/gambar-1.png') }}" alt="">
+								<img src="{{ asset('img/event/' . $value['images']) }}" alt="">
 							</div>
 							<div class="wrapper-event">
 								<div class="row wrapper-event-row">
-									<div class="col-6 location"><i class="fa fa-calendar-alt me-2"></i> 5 Des 2020</div>
-									<div class="col-6 text-end location"><i class="fa fa-location-dot me-2"></i> Jakarta</div>
+									<div class="col-6 location"><i class="fa fa-calendar-alt me-2"></i> {{ $value['tanggal'] }}</div>
+									<div class="col-6 text-end location"><i class="fa fa-location-dot me-2"></i> {{ $value['location'] }}</div>
 								</div>
 								<div class="row">
-									<h4>Lipsum generator: Lorem Ipsum - All the facts</h4>
+									<h4>{{ $value['deskripsi'] }}</h4>
 								</div>
 							</div>
-							<div class="buy-now">
-								Buy Now
-							</div>
 						</div>
-					@endfor
+					@endforeach
 				</div>
 			</div>
 		</section>
