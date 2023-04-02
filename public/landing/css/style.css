@@ -2340,6 +2340,10 @@ iframe {
 }
 
 @media (max-width: 767px) {
+    #hero {
+        height: 350px;
+        text-align: center;
+    }
     .services .icon-box p,
     .services .icon-box h4,
     .services .p-title,
