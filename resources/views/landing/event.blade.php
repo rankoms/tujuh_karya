@@ -28,7 +28,7 @@
 				</swiper-container>
 			</div>
 			<div class="container" data-aos="fade-up">
-				<h3 class="text-center">Event</h3>
+				<h3 class="text-center"></h3>
 				<h2 class="text-center">Active</h2>
 
 				<div class="row event-list past pt-4">
@@ -54,7 +54,7 @@
 				</div>
 			</div>
 			<div class="container" data-aos="fade-up">
-				<h3 class="text-center">Event</h3>
+				<h3 class="text-center"></h3>
 				<h2 class="text-center">Past</h2>
 				<div class="row event-list pt-4">
 					@foreach ($event['pass'] as $key => $value)
