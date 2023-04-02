@@ -50,8 +50,6 @@
 
 		<!-- ======= Services Section ======= -->
 		<section id="services" class="services position-relative">
-			<img src="{{ asset('img/floating/floating_1.png') }}" alt="Floating 1" class="position-absolute floating-1">
-			<img src="{{ asset('img/floating/floating_2.png') }}" alt="Floating 2" class="position-absolute floating-2">
 			<div class="container" data-aos="fade-up">
 				<h2>KAMI MELAKUKANNYA</br>DENGAN SEBAIK-BAIKNYA</h2>
 				<p class="p-title">Kami berusaha untuk menjadi perusahaan ternama dalam mengelola dan menyelenggarakan festival musik

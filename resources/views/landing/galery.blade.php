@@ -20,7 +20,7 @@
 			<div class="" data-aos="fade-up">
 
 				<h3>Galery</h3>
-				<h2>What we have done so far.</h2>
+				<h2></h2>
 
 				<div class="wrapper-portfolio">
 
