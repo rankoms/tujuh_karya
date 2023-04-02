@@ -24,9 +24,9 @@
 
 				<div class="wrapper-portfolio">
 
-					<div class="row custom-portfolio gx-3 mb-3" data-aos="fade-up">
+					<div class="row custom-portfolio gx-3 mb-3 mb-sm-0" data-aos="fade-up">
 
-						<div class="col-lg-3 col-sm-3 ">
+						<div class="col-lg-3 col-sm-3 p-sm-0">
 							<div class="row">
 								<div class="col-12 ">
 									<a href="{{ asset('img/portfolio/' . $galery['baris-awal'][0]['images']) }}" data-gallery="portfolioGallery"
@@ -36,7 +36,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-3 col-sm-3">
+						<div class="col-lg-3 col-sm-3 p-sm-0">
 							<div class="row">
 								<div class="col-lg-12 col-sm-12">
 									<div class="row">
@@ -59,7 +59,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-6 col-sm-6">
+						<div class="col-lg-6 col-sm-6 p-sm-0">
 							<div class="row">
 								<div class="col-sm-12">
 									<a href="{{ asset('img/portfolio/' . $galery['baris-awal'][3]['images']) }}" data-gallery="portfolioGallery"
@@ -70,9 +70,9 @@
 							</div>
 						</div>
 					</div>
-					<div class="row custom-portfolio gx-3 gy-1 mb-3" data-aos="fade-up" data-aos-delay="200">
+					<div class="row custom-portfolio gx-3 mb-3 mb-sm-0" data-aos="fade-up" data-aos-delay="200">
 						@foreach ($galery['baris-tengah'] as $key => $value)
-							<div class="col-lg-3 col-sm-3 short-div">
+							<div class="col-lg-3 col-sm-3 p-sm-0 short-div">
 								<a href="{{ asset('img/portfolio/' . $value['images']) }}" data-gallery="portfolioGallery"
 									class="portfolio-lightbox preview-link portfolio-img"><img
 										src="{{ asset('img/portfolio/' . $value['images']) }}" class="img-fluid img-atas" alt="Galery">
@@ -80,9 +80,9 @@
 							</div>
 						@endforeach
 					</div>
-					<div class="row custom-portfolio gx-3" data-aos="fade-up" data-aos-delay="200">
+					<div class="aos-animate aos-init custom-portfolio gx-3 mb-3 mb-sm-0 row" data-aos="fade-up" data-aos-delay="200">
 
-						<div class="col-lg-3 col-sm-3 ">
+						<div class="col-lg-3 col-sm-3 p-sm-0">
 							<div class="row">
 								<div class="col-12 ">
 									<a href="{{ asset('img/portfolio/' . $galery['baris-akhir'][0]['images']) }}" data-gallery="portfolioGallery"
@@ -92,7 +92,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-3 col-sm-3">
+						<div class="col-lg-3 col-sm-3 p-sm-0">
 							<div class="row">
 								<div class="col-lg-12 col-sm-12">
 									<div class="row">
@@ -115,7 +115,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-6 col-sm-6">
+						<div class="col-lg-6 col-sm-6 p-sm-0">
 							<div class="row">
 								<div class="col-sm-12">
 									<a href="{{ asset('img/portfolio/' . $galery['baris-akhir'][3]['images']) }}" data-gallery="portfolioGallery"
