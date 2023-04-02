@@ -3,77 +3,56 @@
         "slider-1.png", "slider-2.png", "slider-3.png"
     ],
     "active": [{
-        "location": "Jakarta",
+        "location": "Gor UNY, Yogyakarta",
         "images": "gambar-1.png",
-        "tanggal": "5 Des 2020",
-        "link": "",
-        "deskripsi": "Lipsum generator: Lorem Ipsum - All the facts"
+        "tanggal": "7 Mei 2020",
+        "link": "https://app.sermorpheus.com/#/deeplink?productId=54&tierId=undefined&type=Ticketi",
+        "deskripsi": "PESTA SEMALAM MINGGU 'PESTA LAGI YOGYAKARTA'"
 
     }, {
-        "location": "Jakarta",
+        "location": "GOR SATRIA, Purwokerto",
         "images": "gambar-2.png",
-        "tanggal": "5 Des 2020",
-        "link": "",
-        "deskripsi": "Lipsum generator: Lorem Ipsum - All the facts"
+        "tanggal": "27 Mei 2023",
+        "link": "https://app.sermorpheus.com/#/deeplink?productId=53&tierId=undefined&type=Ticketing",
+        "deskripsi": "PESTA SEMALAM MINGGU 'PESTA LAGI PURWOKERTO'"
 
     }, {
-        "location": "Jakarta",
+        "location": "BEKASI",
         "images": "gambar-3.png",
-        "tanggal": "5 Des 2020",
-        "link": "",
-        "deskripsi": "Lipsum generator: Lorem Ipsum - All the facts"
+        "tanggal": "7 -8 Oktober 2023",
+        "link": "https://app.sermorpheus.com/#/deeplink?productId=48&tierId=undefined&type=Ticketing",
+        "deskripsi": "PESTA SEMALAM MINGGU VOL . 4"
 
-    }, {
-        "location": "Jakarta",
-        "images": "gambar-4.png",
-        "tanggal": "5 Des 2020",
-        "link": "",
-        "deskripsi": "Lipsum generator: Lorem Ipsum - All the facts"
-
-    }, {
-        "location": "Jakarta",
-        "images": "gambar-5.png",
-        "tanggal": "5 Des 2020",
-        "link": "",
-        "deskripsi": "Lipsum generator: Lorem Ipsum - All the facts"
-    }, {
-        "location": "Jakarta",
-        "images": "gambar-6.png",
-        "tanggal": "5 Des 2020",
-        "link": "",
-        "deskripsi": "Lipsum generator: Lorem Ipsum - All the facts"
-    }, {
-        "location": "Jakarta",
-        "images": "gambar-7.png",
-        "tanggal": "5 Des 2020",
-        "link": "",
-        "deskripsi": "Lipsum generator: Lorem Ipsum - All the facts"
-    }, {
-        "location": "Jakarta",
-        "images": "gambar-8.png",
-        "tanggal": "5 Des 2020",
-        "link": "",
-        "deskripsi": "Lipsum generator: Lorem Ipsum - All the facts"
     }],
     "pass": [{
-        "location": "Jakarta",
+        "location": "Cafe Stadion Ajah, Bekasi",
         "images": "pass-1.png",
-        "tanggal": "5 Des 2020",
-        "deskripsi": "Lipsum generator: Lorem Ipsum - All the facts"
+        "tanggal": "16 Maret 2019",
+        "deskripsi": "PESTA SEMALAM MINGGU VOL . 1"
     }, {
-        "location": "Jakarta",
+        "location": "Revo Town Mall, Bekasi",
         "images": "pass-2.png",
-        "tanggal": "5 Des 2020",
-        "deskripsi": "Lipsum generator: Lorem Ipsum - All the facts"
+        "tanggal": "7 Desember 2019",
+        "deskripsi": "PESTA SEMALAM MINGGU VOL.2"
     }, {
-        "location": "Jakarta",
+        "location": "Omah Kebon, Bekasi",
         "images": "pass-3.png",
-        "tanggal": "5 Des 2020",
-        "deskripsi": "Lipsum generator: Lorem Ipsum - All the facts"
+        "tanggal": "9 Oktober 2021",
+        "deskripsi": "TRIBUTE KOESPLUS BY TKOES"
     }, {
-        "location": "Jakarta",
+        "location": "Grand Ballroom Toton Baho, Bekasi",
         "images": "pass-4.png",
-        "tanggal": "5 Des 2020",
-        "deskripsi": "Lipsum generator: Lorem Ipsum - All the facts"
+        "tanggal": "26 Juni 2022",
+        "deskripsi": "PESTA SEMALAM MINGGU 'PESTA LAGI BEKASI'"
+    }, {
+        "location": "Parkir Selatan Transera Waterpark, Bekasi",
+        "images": "pass-5.png",
+        "tanggal": "1 Oktober 2022",
+        "deskripsi": "PESTA SEMALAM MINGGU VOL.3"
+    }, {
+        "location": "Parking Ground Summarecon Mall Bekasi, Bekasi",
+        "images": "pass-6.png",
+        "tanggal": "12 Maret 2023",
+        "deskripsi": "PESTA SEMALAM MINGGU 'PESTA LAGI BEKASI'"
     }]
 }

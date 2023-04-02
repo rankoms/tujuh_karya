@@ -29,11 +29,10 @@
 				<div class="row content">
 					<div class="col-lg-12 p-4
 					">
-						<h2>
-							{{ config('config_page.wording_about_h2') }}
-						</h2>
-						<h1>{{ config('config_page.wording_about_h1') }}</h1>
-					</div>
+						<h4 style="text-align:justify;">Didirikan pada tahun 2022, PT. Tujuh Karya Sinergi bergerak di bidang promotor, event organizer, dan periklanan yang memiliki tujuan memasarkan dunia hiburan di Indonesia. Pada tahun 2019, sebelum perusahaan diresmikan oleh Badan Hukum, kami sudah mengadakan festival untuk pertama kali nya yang dikenal sebagai Pesta Semalam Minggu Vol.1, yang dimana akar dari munculnya festival lanjutan seperti Pesta Semalam Minggu Vol.2, Pesta Semalam Minggu “Pesta Lagi 2022, Pesta Semalam Minggu Vol.3 hingga Pesta Semalam Minggu “Pesta Lagi” 2023.</h4></br>
+						<h4 style="text-align:justify;">Tujuh Karya Sinergi kini telah konsisten menjalankan 6 event terhitung sejak Maret 2023, dan akan terus menyelenggarakan Festival Musik dengan terus meningkatan kualitas untuk menghibur masyarakat luas.</h4></br>
+						<h4 style="text-align:justify;">Pada intinya Tujuh Karya Sinergi bertujuan untuk mempromosikan Dunia Hiburan terutama Festival Musik, kami terus berupaya mempresentasikan hiburan yang berkualitas dan tersusun dengan baik, sekaligus memantapkan diri sebagai perusahaan yang diakui oleh masyarakat untuk menyelenggarakan acara secara nasional maupun internasional.</h4></br>
+						</div>
 				</div>
 
 			</div>
@@ -44,15 +43,11 @@
 			<img src="{{ asset('img/floating/floating_1.png') }}" alt="Floating 1" class="position-absolute floating-1">
 			<img src="{{ asset('img/floating/floating_2.png') }}" alt="Floating 2" class="position-absolute floating-2">
 			<div class="container" data-aos="fade-up">
-				<h3>WHAT WE DO</h3>
-				<h2>We do it at its best</h2>
-				<p class="p-title">We are the pioneer and leading company in managing and organizing an international music festival
-					for years in
-					Indonesia. We are an expert in executing world-class and memorable events. Collaborate with us, and we will exceed
-					your expectation.</p>
+				<h2>KAMI MELAKUKANNYA</br>DENGAN SEBAIK-BAIKNYA</h2>
+				<p class="p-title">Kami berusaha untuk menjadi perusahaan ternama dalam mengelola dan menyelenggarakan festival musik dalam taraf nasional hingga internasional. Kami ahli dalam melaksanakan acara yang berkesan. </p>
 
 				<div class="row">
-					<div class="col-xl-6 col-md-6 d-flex align-items-stretch mt-4 mt-md-0 mb-4" data-aos="zoom-in" data-aos-delay="100">
+					<!-- <div class="col-xl-6 col-md-6 d-flex align-items-stretch mt-4 mt-md-0 mb-4" data-aos="zoom-in" data-aos-delay="100">
 						<div class="icon-box">
 							<div class="icon text-center"><img src="{{ asset('img/ticket.svg') }}" width="auto" alt="thumbnail"></div>
 							<h4>TICKETING PLATFORM AND REGISTRATION SYSTEM</h4>
@@ -60,34 +55,29 @@
 								Indonesia. We are an expert in executing world-class and memorable events. Collaborate with us, and we will
 								exceed your expectation.</p>
 						</div>
-					</div>
+					</div> -->
 
-					<div class="col-xl-6 col-md-6 d-flex align-items-stretch mt-4 mt-md-0 mb-4" data-aos="zoom-in" data-aos-delay="200">
+					<div class="col-xl-12 col-md-12 d-flex align-items-stretch mt-4 mt-md-0 mb-4" data-aos="zoom-in" data-aos-delay="200">
 						<div class="icon-box text-center">
 							<div class="icon"><img src="{{ asset('img/star.svg') }}" width="auto" alt="thumbnail"></div>
-							<h4>ARTIST/TALENT BOOKING</h4>
-							<p>Do you need live entertainment for your event? Many years of experience in this field, we have worked with many
-								talents, from emerging new talents/artists to well-known talents/artists. We maintain our relationships well and
-								with that, we can help you to create impressive events.</p>
+							<h4>PEMESANAN ARTIS/TALENTA</h4>
+							<p>Jika anda membutuhkan hiburan langsung untuk acara anda, kami siap membantu dengan pengalaman bertahun-tahun dalam bidang ini, kami telah bekerja sama dengan artis ternama. Kami menjaga relasi dengan baik, dengan </p>
 						</div>
 					</div>
 
 					<div class="col-xl-6 col-md-6 d-flex align-items-stretch mt-4 mt-md-0 mb-4" data-aos="zoom-in" data-aos-delay="300">
 						<div class="icon-box text-center">
 							<div class="icon"><img src="{{ asset('img/partner.svg') }}" width="auto" alt="thumbnail"></div>
-							<h4><a href="">SPONSORSHIP AND PARTNERSHIP</a></h4>
-							<p>With our strong relationship and extensive experience working with various companies, we can help to provide
-								you with marketing services for your events.</p>
+							<h4><a href="">SPONSOR DAN KEMITRAAN</a></h4>
+							<p>Kami dapat membantu menyediakan kebutuhan pemasaran untuk acara anda melalui hubungan yang kuat dengan berbagai perusahaan. </p>
 						</div>
 					</div>
 
 					<div class="col-xl-6 col-md-6 d-flex align-items-stretch mt-4 mt-md-0 mb-4" data-aos="zoom-in" data-aos-delay="400">
 						<div class="icon-box text-center">
 							<div class="icon"><img src="{{ asset('img/event.svg') }}" width="auto" alt="thumbnail"></div>
-							<h4>EVENTS</h4>
-							<p>We began our journey in 2005 by creating one of the largest jazz festivals in the world. As years go by, we
-								continue to grow and with our experience, we will provide you with professional insights and help to execute your
-								event smoothly.</p>
+							<h4>ACARA</h4>
+							<p>Kami memulai perjalanan kami di tahun 2019 dengan membuat salah satu festival musik di Kota Bekasi. Seiring berjalannya waktu, kami terus berkembang dan dengan pengalaman kami, kami akan memberikan pengetahuan secara profesional yang akan membantu Anda untuk melaksanakan sebuah acara.  </p>
 						</div>
 					</div>
 
@@ -95,7 +85,7 @@
 
 			</div>
 		</section>
-		<section class="services position-relative pt-0">
+		<!-- <section class="services position-relative pt-0">
 
 			<img src="{{ asset('img/floating/floating_3.png') }}" alt="Floating 1" class="position-absolute floating-3 d-none">
 			<div class="container" data-aos="fade-up">
@@ -124,56 +114,30 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> -->
 
-		<section class="services position-relative pt-0">
+		<!-- <section class="services position-relative pt-0">
 			<div class="why-choose-me" data-aos="fade-up">
-				<h3>WHY CHOOSE TUJUH KARYA SINERGI PRODUCTION?</h3>
-				<h2>We listen. We discuss. <br />We advise.We Provide.</h2>
+				<h3>KENAPA HARUS TUJUH KARYA SINERGI ?</h3>
+				<h2>Kami bertujuan untuk membangun ekosistem entertaiment berjalan dengan baik & membesarkan event kami menjadi event yang lebih baik, tidak hanya di Bekasi tapi di kota lain juga.</h2>
 
-				<div class="row">
-					<div class="col-xl-4 col-sm-12 d-flex mt-4 mb-4 justify-content-center" data-aos="zoom-in" data-aos-delay="100">
-						<div class="icon-box">
-							<div class="icon text-center"><img src="{{ asset('img/creative.svg') }}" width="auto" alt="thumbnail"></div>
-							<h4>We are creative
-							</h4>
-							<p>One of the keys to a successful event is a creative mind. Our team is full of passion, we crave for challenges
-								that gives excitement, and ready to have a creative discussion with you to produce a splendid event.</p>
-						</div>
-					</div>
-					<div class="col-xl-4 col-sm-12 d-flex mt-4 mb-4 justify-content-center" data-aos="zoom-in" data-aos-delay="100">
-						<div class="icon-box">
-							<div class="icon text-center"><img src="{{ asset('img/listener.svg') }}" width="auto" alt="thumbnail"></div>
-							<h4>We are a good listener</h4>
-							<p>Our team is filled with people passionate about events. Share your thoughts and we will help to develop the
-								concept, design, and execute your event from beginning to end.</p>
-						</div>
-					</div>
-					<div class="col-xl-4 col-sm-12 d-flex mt-4 mb-4 justify-content-center" data-aos="zoom-in" data-aos-delay="100">
-						<div class="icon-box">
-							<div class="icon text-center"><img src="{{ asset('img/time.svg') }}" width="auto" alt="thumbnail"></div>
-							<h4>We deliver on time</h4>
-							<p>Time is the most essential part of crafting an event. We are ready to meet your deadlines in executing an event
-								that is astounding.</p>
-						</div>
-					</div>
-				</div>
+				
 			</div>
-		</section><!-- End Services Section -->
+		</section>End Services Section -->
 
 
 		<!-- ======= Portfolio Section ======= -->
 		<section id="portfolio" class="portfolio services">
 			<div class="" data-aos="fade-up">
 
-				<h3>RECENT CASE STUDIES</h3>
-				<h2>What we have done so far.</h2>
+				<h3>GALLERY</h3>
+				<h2></h2>
 
 				<div class="wrapper-portfolio">
 
 					<div class="row custom-portfolio" data-aos="fade-up" data-aos-delay="200">
 
-						<div class="col-lg-2 col-sm-12 offset-lg-1 p-0">
+					<div class="col-lg-2 col-sm-12 offset-lg-1 p-0">
 							<div class="row">
 								<div class="col-12 ">
 									<a href="{{ asset('img/portfolio/images_1.png') }}" data-gallery="portfolioGallery"
@@ -297,19 +261,35 @@
 				<div class="row" data-aos="zoom-in">
 
 					<div class="col-lg-2 col-md-6 col-6 d-flex align-items-center justify-content-center offset-lg-2">
-						<img src="{{ asset('img/client/client-1.svg') }}" class="img-fluid" alt="Client">
+						<img src="{{ asset('img/client/1.png') }}" class="img-fluid" alt="Client">
 					</div>
 
 					<div class="col-lg-2 col-md-6 col-6 d-flex align-items-center justify-content-center">
-						<img src="{{ asset('img/client/client-2.svg') }}" class="img-fluid" alt="Client">
+						<img src="{{ asset('img/client/2.png') }}" class="img-fluid" alt="Client">
 					</div>
 
 					<div class="col-lg-2 col-md-6 col-6 d-flex align-items-center justify-content-center">
-						<img src="{{ asset('img/client/client-3.svg') }}" class="img-fluid" alt="Client">
+						<img src="{{ asset('img/client/3.png') }}" class="img-fluid" alt="Client">
 					</div>
 
 					<div class="col-lg-2 col-md-6 col-6 d-flex align-items-center justify-content-center">
-						<img src="{{ asset('img/client/client-4.svg') }}" class="img-fluid" alt="Client">
+						<img src="{{ asset('img/client/4.png') }}" class="img-fluid" alt="Client">
+					</div>
+
+					<div class="col-lg-2 col-md-6 col-6 d-flex align-items-center justify-content-center">
+						<img src="{{ asset('img/client/5.png') }}" class="img-fluid" alt="Client">
+					</div>
+
+					<div class="col-lg-2 col-md-6 col-6 d-flex align-items-center justify-content-center">
+						<img src="{{ asset('img/client/6.png') }}" class="img-fluid" alt="Client">
+					</div>
+
+					<div class="col-lg-2 col-md-6 col-6 d-flex align-items-center justify-content-center">
+						<img src="{{ asset('img/client/7.png') }}" class="img-fluid" alt="Client">
+					</div>
+
+					<div class="col-lg-2 col-md-6 col-6 d-flex align-items-center justify-content-center">
+						<img src="{{ asset('img/client/8.png') }}" class="img-fluid" alt="Client">
 					</div>
 
 				</div>
@@ -319,8 +299,8 @@
 		<section id="client-services" class="client-services services">
 
 			<div class="container" data-aos="fade-up">
-				<h3>DON'T TAKE OUR FOR IT!</h3>
-				<h2>Hear What Our Clients and Partners Say.</h2>
+				<h3>TESTIMONIAL</h3>
+				<h2></h2>
 				<div class="bungkus-swiper">
 
 					<swiper-container class="mySwiper" space-between="30" slides-per-view="auto" pagination="true"

@@ -5,23 +5,23 @@
 			<div class="col-lg-7 mt-5 mt-lg-0 align-items-stretch kiri p-4">
 				<div class="wrapper-text info">
 
-					<h3>SAY HELLO!</h3>
+					<h3>INFORMASI LEBIH LANJUT</h3>
 
-					<h2>We would like to hear from you.</h2>
+					<h2></h2>
 
 					<div class="row">
-						<div class="col-lg-4">
+						<!-- <div class="col-lg-4">
 
 							<div class="phone d-flex">
 								<img src="{{ asset('img/contact/phone.svg') }}" alt="Phone">
-								<p>+1 5589 55488 55s</p>
+								<p></p>
 							</div>
-						</div>
-						<div class="col-lg-8">
+						</div> -->
+						<div class="col-lg-12">
 
-							<div class="address d-flex">
+							<div class="address d-flex align-self-baseline">
 								<img src="{{ asset('img/contact/address.svg') }}" alt="Address">
-								<p>A108 Adam Street, New York, NY 535022</p>
+								<p>Jl. Bulevar Ahmad Yani Kav. K.01 Margamulya, Bekasi Utara, Kota Bekasi Jawa Barat</p>
 							</div>
 						</div>
 					</div>
@@ -30,7 +30,7 @@
 
 							<div class="email d-flex align-self-baseline">
 								<img src="{{ asset('img/contact/email.svg') }}" alt="Email">
-								<p>info@example.com</p>
+								<p>tks@tujuhkaryasinergi.com</p>
 							</div>
 						</div>
 					</div>
@@ -79,9 +79,7 @@
 			<div class="col-lg-5 d-flex align-items-stretch p-0">
 				<div class="info">
 
-					<iframe
-						src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
-						frameborder="0" allowfullscreen></iframe>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1983.1447371783606!2d106.9968265170559!3d-6.225511537969303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698c19f0213fe5%3A0x46e0c2f6fff4d965!2sJl.%20Bulevar%20Ahmad%20Yani%2C%20RT.006%2FRW.002%2C%20Marga%20Mulya%2C%20Kec.%20Bekasi%20Utara%2C%20Kota%20Bks%2C%20Jawa%20Barat!5e0!3m2!1sen!2sid!4v1680365391398!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 				</div>
 
 			</div>
