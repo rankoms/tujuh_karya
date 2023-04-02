@@ -280,11 +280,10 @@
 										<img src="{{ asset('img/notes/notes_1.png') }}" alt="notes" width="90px" height="90px">
 									</div>
 									<div class="kanan">
-										<div class="title-name text-start">John Fang</div>
-										<div class="title-type text-start">Music</div>
+										<div class="title-name text-start">@nonaendahmukti</div>
+										<div class="title-type text-start"></div>
 										<div class="title-description text-start">
-											Suspendisse ultrices at diam lectus nullam.
-											Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam laoreet nulla.
+										Pokoknya wajib di ulang lagi.. Sampai sekarang aku belum bisa moveon sama konser ini petdjaahh banget. kereeenn pokoknya bekasi ambyarrr. nonton dari kering sampe basaahh yang penting bisa ambyarr bareng @pestasemalaminggu.
 										</div>
 									</div>
 								</div>
@@ -294,15 +293,13 @@
 							<div class="row">
 								<div class="col-sm-12 d-flex bungkus-notes">
 									<div>
-										<img src="{{ asset('img/notes/notes_1.png') }}" alt="notes" width="90px" height="90px">
+										<img src="{{ asset('img/notes/notes_2.png') }}" alt="notes" width="90px" height="90px">
 									</div>
 									<div class="kanan">
-										<div class="title-name text-start">John Fang</div>
-										<div class="title-type text-start">Music</div>
+										<div class="title-name text-start">@kykymus21</div>
+										<div class="title-type text-start"></div>
 										<div class="title-description text-start">
-											Suspendisse ultrices at diam lectus nullam.
-											Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam laoreet nulla.
-										</div>
+										Vol.4 nya harus lebih pecah @pestasemalaminggu HAPPY ASMARA DENNY CAKNAN GUYON WATON,NDARBOYGENK AFTERSHINE. HARUSSS GW BAKAL CAW LG.</div>
 									</div>
 								</div>
 							</div>
@@ -311,15 +308,13 @@
 							<div class="row">
 								<div class="col-sm-12 d-flex bungkus-notes">
 									<div>
-										<img src="{{ asset('img/notes/notes_1.png') }}" alt="notes" width="90px" height="90px">
+										<img src="{{ asset('img/notes/notes_3.png') }}" alt="notes" width="90px" height="90px">
 									</div>
 									<div class="kanan">
-										<div class="title-name text-start">John Fang</div>
-										<div class="title-type text-start">Music</div>
+										<div class="title-name text-start">@trisetyodany15</div>
+										<div class="title-type text-start"></div>
 										<div class="title-description text-start">
-											Suspendisse ultrices at diam lectus nullam.
-											Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam laoreet nulla.
-										</div>
+										Jujur,awalnya sempet ngira acaranya bakal kacau kaya acara sebelah yg di Bogor karena namanya hampir sama. Eh ternyata PSM the best banget Gak nyesel gua beli tiket dari bulan Juli hehehe pokoknya di segerakan Vol 4 ya min jangan lama lama jedanya hehehe semoga gs nya lebih mantep Dan request undang @armadaband ya min karena gua salah satu PASUKAN ARMADA hehehe</div>
 									</div>
 								</div>
 							</div>
