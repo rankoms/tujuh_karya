@@ -2421,6 +2421,16 @@ iframe {
         width: 100%;
         object-fit: cover;
     }
+    .event-list .wrapper-event .location {
+        font-size: 10px;
+    }
+    .event-list .buy-now {
+        font-size: 16px;
+    }
+    .event-list .wrapper-event h4 {
+        font-size: 16px;
+        line-height: initial;
+    }
     .col-sm-2 {
         flex: 0 0 auto;
         width: 16.66666667%;

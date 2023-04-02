@@ -33,7 +33,7 @@
 
 				<div class="row event-list past pt-4">
 					@foreach ($event['active'] as $key => $value)
-						<a href="{{ $value['link'] }}" class="col-xl-3 col-md-6 col-sm-12 align-items-stretch mt-4 mt-md-0 mb-4">
+						<a href="{{ $value['link'] }}" class="col-xl-3 col-md-6 col-sm-6 align-items-stretch mt-4 mt-md-0 mb-4">
 							<div>
 								<img src="{{ asset('img/event/' . $value['images']) }}" alt="">
 							</div>
@@ -58,7 +58,7 @@
 				<h2 class="text-center">Past</h2>
 				<div class="row event-list pt-4">
 					@foreach ($event['pass'] as $key => $value)
-						<div class="col-xl-3 col-md-6 col-sm-12 align-items-stretch mt-4 mt-md-0 mb-4">
+						<div class="col-xl-3 col-md-6 col-sm-6 align-items-stretch mt-4 mt-md-0 mb-4">
 							<div>
 								<img src="{{ asset('img/event/' . $value['images']) }}" alt="">
 							</div>
