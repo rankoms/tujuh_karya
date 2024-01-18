@@ -1,27 +1,20 @@
 {
     "slider": [
-        "slider-1.png", "slider-2.png", "slider-3.png"
+        "slider-4.png"
     ],
     "active": [{
-        "location": "Gor UNY, Yogyakarta",
-        "images": "gambar-1.png",
-        "tanggal": "7 Mei 2020",
-        "link": "https://app.sermorpheus.com/#/deeplink?productId=54&tierId=undefined&type=Ticketi",
-        "deskripsi": "PESTA SEMALAM MINGGU 'PESTA LAGI YOGYAKARTA'"
-
-    }, {
-        "location": "GOR SATRIA, Purwokerto",
-        "images": "gambar-2.png",
-        "tanggal": "27 Mei 2023",
-        "link": "https://app.sermorpheus.com/#/deeplink?productId=53&tierId=undefined&type=Ticketing",
-        "deskripsi": "PESTA SEMALAM MINGGU 'PESTA LAGI PURWOKERTO'"
+        "location": "BEKASI",
+        "images": "gambar-4.png",
+        "tanggal": "26 - 27 Oktober 2024",
+        "link": "https://app.konser.co.id/#/deeplink?productId=239&tierId=undefined",
+        "deskripsi": "PESTA SEMALAM MINGGU VOL . 5"
 
     }, {
         "location": "BEKASI",
-        "images": "gambar-3.png",
-        "tanggal": "7 -8 Oktober 2023",
-        "link": "https://app.sermorpheus.com/#/deeplink?productId=48&tierId=undefined&type=Ticketing",
-        "deskripsi": "PESTA SEMALAM MINGGU VOL . 4"
+        "images": "gambar-5.png",
+        "tanggal": "2 Maret 2024",
+        "link": "https://app.konser.co.id/#/deeplink?productId=243&tierId=undefined",
+        "deskripsi": "PESTA SEMALAM MINGGU 'PESTA LAGI BEKASI'"
 
     }],
     "pass": [{
@@ -54,5 +47,25 @@
         "images": "pass-6.png",
         "tanggal": "12 Maret 2023",
         "deskripsi": "PESTA SEMALAM MINGGU 'PESTA LAGI BEKASI'"
-    }]
+    },{
+        "location": "GOR SATRIA, Purwokerto",
+        "images": "gambar-2.png",
+        "tanggal": "27 Mei 2023",
+        "deskripsi": "PESTA SEMALAM MINGGU 'PESTA LAGI PURWOKERTO'"
+
+    }, {
+        "location": "Gor UNY, Yogyakarta",
+        "images": "gambar-1.png",
+        "tanggal": "7 Mei 2020",
+        "deskripsi": "PESTA SEMALAM MINGGU 'PESTA LAGI YOGYAKARTA'"
+
+    }, {
+        "location": "BEKASI",
+        "images": "gambar-3.png",
+        "tanggal": "7 -8 Oktober 2023",
+        "deskripsi": "PESTA SEMALAM MINGGU VOL . 4"
+
+    }
+
+]
 }
