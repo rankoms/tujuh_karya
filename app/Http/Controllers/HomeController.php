@@ -29,6 +29,11 @@ class HomeController extends Controller
         return view('landing.index');
     }
 
+    public function crew()
+    {
+        return view('landing.crew');
+    }
+
     public function event()
     {
         $path = base_path('data/event.json');

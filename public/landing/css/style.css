@@ -2076,8 +2076,59 @@ section {
 }
 
 .page-portfolio,
-.page-event {
+.page-event, .page-crew {
     padding-top: 160px;
+}
+
+.page-crew h2{
+    
+    font-family: Barlow;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 38px;
+    letter-spacing: 12px;
+    color: #A200BC;
+}
+.page-crew .img-crew{
+    max-width: 410px;
+    max-height: 410px;
+}
+
+.page-crew .form-container{
+    
+    padding: 50px 200px;
+}
+.page-crew #form-crew label{
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #1C1C1C;
+    margin-bottom: 21px;
+}
+
+.page-crew #form-crew input{
+    padding: 21px 35px;
+    margin-bottom: 25px;
+}
+.page-crew #form-crew #btn-submit{
+    padding: 25px 120px;
+    border-radius: 10px;
+    background-color: #005688;
+    color: #fff;
+
+}
+
+@media (max-width: 767px) {
+    .page-crew .form-container{
+        
+        padding: 0;
+    }
+    .page-crew .img-crew{
+        max-width: 310px;
+        max-height: 310px;
+    }
 }
 
 .wrapper-portfolio {

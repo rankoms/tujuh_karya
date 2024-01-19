@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\CrewController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -24,7 +25,9 @@ Auth::routes();
 
 Route::get('/', [HomeController::class, 'index'])->name('index');
 Route::get('/event', [HomeController::class, 'event'])->name('event');
+Route::get('/crew', [HomeController::class, 'crew'])->name('crew');
 Route::get('/galery', [HomeController::class, 'galery'])->name('galery');
 Route::post('/contact/store', [ContactController::class, 'store'])->name('contact.store');
+Route::post('/crew/store', [CrewController::class, 'store'])->name('crew.store');
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
