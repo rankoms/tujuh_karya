@@ -2108,7 +2108,7 @@ section {
     margin-bottom: 21px;
 }
 
-.page-crew #form-crew input{
+.page-crew #form-crew input,.page-crew #form-crew select{
     padding: 21px 35px;
     margin-bottom: 25px;
 }
