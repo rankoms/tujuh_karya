@@ -29,22 +29,26 @@
                         @csrf
                         <div class="form-group">
                             <label for="name">Nama Lengkap</label>
-                            <input type="text" class="form-control" id="name" name="name" placeholder="Nama">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Nama" required>
                         </div>
                         <div class="form-group">
                             <label for="divisi">Divisi</label>
-                            <input type="text" class="form-control" id="divisi" name="divisi"
-                                placeholder="Ticketing">
+                            <select name="divisi" class="form-control" required>
+    <option value="">Pilih Divisi</option>
+    <option value="Ticketing">Ticketing</option>
+    <option value="Production">Production</option>
+    <option value="Tenant">Tenant</option>
+  </select>
                         </div>
                         <div class="form-group">
                             <label for="phone">Nomor Handphone</label>
-                            <input type="text" class="form-control" id="phone" name="phone"
-                                placeholder="Nomor Handphone">
+                            <input type="number" class="form-control" id="phone" name="phone"
+                                placeholder="Nomor Handphone" required>
                         </div>
                         <div class="form-group">
                             <label for="phone">Photo</label>
                             <input type="file" class="form-control" id="photo" name="photo" placeholder="Photo"
-                                accept="image/png, image/gif, image/jpeg">
+                                accept="image/png, image/gif, image/jpeg" required>
                         </div>
                         <div class="form-group text-center">
                             <button type="submit" class="btn btn-info" id="btn-submit">Simpan</button>
@@ -100,8 +104,8 @@
 
                         Swal.fire({
                             icon: 'success',
-                            title: 'Sukses',
-                            text: meta.message,
+                            title: 'Terimakasih, Data Anda Sudah Kami Terima',
+                            // text: meta.message,
                         }).then((result) => {
                             resetForm()
                         });

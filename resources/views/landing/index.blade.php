@@ -226,6 +226,10 @@
 
 				<div class="row" data-aos="zoom-in">
 
+				<div class="col-lg-2 col-md-6 col-6 d-flex align-items-center justify-content-center">
+						<img src="{{ asset('img/client/10.png') }}" class="img-fluid" alt="Client">
+					</div>
+
 					<div class="col-lg-2 col-md-6 col-6 d-flex align-items-center justify-content-center">
 						<img src="{{ asset('img/client/1.png') }}" class="img-fluid" alt="Client">
 					</div>
