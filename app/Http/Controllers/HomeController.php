@@ -33,6 +33,10 @@ class HomeController extends Controller
     {
         return view('landing.crew');
     }
+    public function volunteer()
+    {
+        return view('landing.volunteer');
+    }
 
     public function event()
     {

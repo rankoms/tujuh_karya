@@ -2076,11 +2076,11 @@ section {
 }
 
 .page-portfolio,
-.page-event, .page-crew {
+.page-event, .page-crew,.page-volunteer{
     padding-top: 160px;
 }
 
-.page-crew h2{
+.page-crew h2,.page-volunteer h2{
     
     font-family: Barlow;
     font-size: 24px;
@@ -2089,16 +2089,16 @@ section {
     letter-spacing: 12px;
     color: #A200BC;
 }
-.page-crew .img-crew{
+.page-crew .img-crew, .page-volunteer .img-volunteer{
     max-width: 410px;
     max-height: 410px;
 }
 
-.page-crew .form-container{
+.page-crew .form-container, .page-volunteer .form-container{
     
     padding: 50px 200px;
 }
-.page-crew #form-crew label{
+.page-crew #form-crew label, .page-volunteer #form-volunteer label{
     font-size: 17px;
     font-weight: 700;
     line-height: 22px;
@@ -2108,11 +2108,11 @@ section {
     margin-bottom: 21px;
 }
 
-.page-crew #form-crew input,.page-crew #form-crew select{
+.page-crew #form-crew input,.page-crew #form-crew select,.page-volunteer #form-volunteer input,.page-volunteer #form-volunteer select{
     padding: 21px 35px;
     margin-bottom: 25px;
 }
-.page-crew #form-crew #btn-submit{
+.page-crew #form-crew #btn-submit,.page-volunteer #form-volunteer #btn-submit{
     padding: 25px 120px;
     border-radius: 10px;
     background-color: #005688;
@@ -2121,11 +2121,10 @@ section {
 }
 
 @media (max-width: 767px) {
-    .page-crew .form-container{
-        
+    .page-crew .form-container, .page-volunteer .form-container{
         padding: 0;
     }
-    .page-crew .img-crew{
+    .page-crew .img-crew, .page-volunteer .img-volunteer{
         max-width: 310px;
         max-height: 310px;
     }

@@ -26,8 +26,10 @@ Auth::routes();
 Route::get('/', [HomeController::class, 'index'])->name('index');
 Route::get('/event', [HomeController::class, 'event'])->name('event');
 Route::get('/crew', [HomeController::class, 'crew'])->name('crew');
+Route::get('/volunteer', [HomeController::class, 'volunteer'])->name('volunteer');
 Route::get('/galery', [HomeController::class, 'galery'])->name('galery');
 Route::post('/contact/store', [ContactController::class, 'store'])->name('contact.store');
 Route::post('/crew/store', [CrewController::class, 'store'])->name('crew.store');
+Route::post('/volunteer/store', [CrewController::class, 'store_cv'])->name('crew.volunteer.store');
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

@@ -32,6 +32,11 @@
                 @else
                     <li><a class="nav-link scrollto" href="{{ route('crew') }}">Crew</a></li>
                 @endif
+                @if (Request::segment(1) == 'volunteer')
+                    <li><a class="nav-link scrollto" href="#volunteer">Volunteer</a></li>
+                @else
+                    <li><a class="nav-link scrollto" href="{{ route('volunteer') }}">Volunteer</a></li>
+                @endif
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
         </nav><!-- .navbar -->

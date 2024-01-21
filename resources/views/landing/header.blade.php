@@ -19,6 +19,7 @@
                 <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
                 <li><a class="nav-link scrollto" href="{{ route('event') }}">Event</a></li>
                 <li><a class="nav-link" href="{{ route('crew') }}">Crew</a></li>
+                <li><a class="nav-link" href="{{ route('volunteer') }}">Volunteer</a></li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
         </nav><!-- .navbar -->
