@@ -29,16 +29,17 @@
                         @csrf
                         <div class="form-group">
                             <label for="name">Nama Lengkap</label>
-                            <input type="text" class="form-control" id="name" name="name" placeholder="Nama" required>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Nama"
+                                required>
                         </div>
                         <div class="form-group">
                             <label for="divisi">Divisi</label>
                             <select name="divisi" class="form-control" required>
-    <option value="">Pilih Divisi</option>
-    <option value="Ticketing">Ticketing</option>
-    <option value="Production">Production</option>
-    <option value="Tenant">Tenant</option>
-  </select>
+                                <option value="">Pilih Divisi</option>
+                                <option value="Ticketing">Ticketing</option>
+                                <option value="Production">Production</option>
+                                <option value="Tenant">Tenant</option>
+                            </select>
                         </div>
                         <div class="form-group">
                             <label for="phone">Nomor Handphone</label>

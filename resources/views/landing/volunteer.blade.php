@@ -33,6 +33,11 @@
                                 required>
                         </div>
                         <div class="form-group">
+                            <label for="phone">Nomor Handphone</label>
+                            <input type="number" class="form-control" id="phone" name="phone"
+                                placeholder="Nomor Handphone" required>
+                        </div>
+                        <div class="form-group">
                             <label for="phone">CV</label>
                             <input type="file" class="form-control" id="cv" name="cv" placeholder="cv"
                                 accept="application/msword,application/pdf,image/*" required>

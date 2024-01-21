@@ -50,11 +50,12 @@ class CrewController extends Controller
     {
         request()->validate([
             'name' => ['required'],
+            'phone' => ['required'],
             'cv' => ['required', 'max:5120'],
         ]);
 
         $name = $request->name;
-
+        $phone = $request->phone;
         $namecv = null;
         if ($request->has('cv')) {
             $file = $request->file('cv');
@@ -70,6 +71,7 @@ class CrewController extends Controller
         $volunteer = new Volunteer();
         $volunteer->name = $name;
         $volunteer->cv = $namecv;
+        $volunteer->phone = $phone;
         $volunteer->save();
         return ResponseFormatter::success(null, 'Success');
     }
