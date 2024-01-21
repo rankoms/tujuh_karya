@@ -48,8 +48,15 @@
                         </div>
                         <div class="form-group">
                             <label for="phone">Photo</label>
+                            <small class="form-text text-muted"><br />- foto semi formal<br />
+                                - menghadap depan<br />
+                                - wajah tidak terhalang oleh topi dan aksesoris lainnya kecuali hijab <br />
+                                Contoh : </small>
+                            <img src="{{ asset('img/crew_example.jpg') }}" alt="Example" width="150px" height="auto"
+                                class="mb-2" style="border-radius:10px">
                             <input type="file" class="form-control" id="photo" name="photo" placeholder="Photo"
                                 accept="image/png, image/gif, image/jpeg" required>
+
                         </div>
                         <div class="form-group text-center">
                             <button type="submit" class="btn btn-info" id="btn-submit">Simpan</button>
