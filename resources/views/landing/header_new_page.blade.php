@@ -28,9 +28,9 @@
                     <li><a class="nav-link scrollto" href="{{ route('event') }}">Event</a></li>
                 @endif
                 @if (Request::segment(1) == 'crew')
-                    <li><a class="nav-link scrollto" href="#crew">Crew</a></li>
+                    <!--<li><a class="nav-link scrollto" href="#crew">Crew</a></li>-->
                 @else
-                    <li><a class="nav-link scrollto" href="{{ route('crew') }}">Crew</a></li>
+                    <!--<li><a class="nav-link scrollto" href="{{ route('crew') }}">Crew</a></li>-->
                 @endif
                 @if (Request::segment(1) == 'volunteer')
                     <li><a class="nav-link scrollto" href="#volunteer">Volunteer</a></li>

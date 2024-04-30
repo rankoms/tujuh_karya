@@ -15,17 +15,17 @@
 
     <main id="main">
         <!-- ======= Services Section ======= -->
-        <section id="crew" class="crew page-crew">
+        <section id="volunteer" class="volunteer page-volunteer">
             <div class="container" data-aos="fade-up">
-                <h2 class="text-center">FORM CREW</h2>
+                <h2 class="text-center">FORM Volunteer</h2>
                 <div class="text-center">
-                    <img src="{{ asset('img/crew.png') }}" alt="Crew" class="img-crew">
+                    <img src="{{ asset('img/crew.png') }}" alt="volunteer" class="img-volunteer">
                 </div>
                 <div class="form-container">
                     <hr>
-                    <h3 class="text-center pt-4 pb-4">Data Crew</h3>
+                    <h3 class="text-center pt-4 pb-4">Data Volunteer</h3>
 
-                    <form id="form-crew">
+                    <form id="form-volunteer">
                         @csrf
                         <div class="form-group">
                             <label for="name">Nama Lengkap</label>
@@ -33,38 +33,15 @@
                                 required>
                         </div>
                         <div class="form-group">
-                            <label for="divisi">Divisi</label>
-                            <select name="divisi" class="form-control" required>
-                                <option value="">Pilih Divisi</option>
-                                <option value="Ticketing">Ticketing</option>
-                                <option value="Production">Production</option>
-                                <option value="KOL">KOL</option>
-                                <option value="Partnership">Partnership</option>
-                                <option value="Sponsor">Sponsor</option>
-                                <option value="Media">Media</option>
-                                <option value="Tenant">Tenant</option>
-                                <option value="Family">Family</option>
-                                <option value="Dokumentasi">Dokumentasi</option>
-                                <option value="Crew">Crew</option>
-                                <option value="Medis">Medis</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
                             <label for="phone">Nomor Handphone</label>
                             <input type="number" class="form-control" id="phone" name="phone"
                                 placeholder="Nomor Handphone" required>
                         </div>
-                       <div class="form-group">
-                            <label for="phone">Photo</label>
-                            <small class="form-text text-muted"><br />- foto semi formal<br />
-                                - menghadap depan<br />
-                                - wajah tidak terhalang oleh topi dan aksesoris lainnya kecuali hijab <br />
-                                Contoh : </small>
-                            <img src="{{ asset('img/crew_example.jpg') }}" alt="Example" width="150px" height="auto"
-                                class="mb-2" style="border-radius:10px">
-                            <input type="file" class="form-control" id="photo" name="photo" placeholder="Photo"
-                                accept="image/png, image/gif, image/jpeg" required>
-
+                        <div class="form-group">
+                            <label for="phone">CV Berisi Foto</label>
+                            <input type="file" class="form-control" id="cv" name="cv" placeholder="Upload CV Berisi Foto"
+                                accept="application/msword,application/pdf,image/*" required>
+                            <small class="form-text text-muted">Masukan CV Max 10 MB</small>
                         </div>
                         <div class="form-group text-center">
                             <button type="submit" class="btn btn-info" id="btn-submit">Simpan</button>
@@ -86,10 +63,10 @@
     <script>
         $(document).ready(function() {
             // alert('oke');
-            $('#form-crew').on('submit', function(e) {
+            $('#form-volunteer').on('submit', function(e) {
                 e.preventDefault();
                 const formData = new FormData(this);
-                url = "{{ route('crew.store') }}";
+                url = "{{ route('crew.volunteer.store') }}";
                 $.ajax({
                     url: url,
                     method: 'POST',
@@ -175,7 +152,7 @@
             });
 
             function resetForm() {
-                $('#form-crew').each(function() {
+                $('#form-volunteer').each(function() {
                     this.reset();
                 });
             }
