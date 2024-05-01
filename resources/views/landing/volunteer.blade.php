@@ -33,17 +33,35 @@
                                 required>
                         </div>
                         <div class="form-group">
-                            <label for="phone">Nomor Handphone</label>
+                            <label for="phone">Nomor Handphone</label>`
                             <input type="number" class="form-control" id="phone" name="phone"
                                 placeholder="Nomor Handphone" required>
                         </div>
+                        {{-- LO, TICKETING, LOGISTIK, MEDIS, TENANT & FLOOR AREA
+ --}}
                         <div class="form-group">
+                            <label for="divisi">Divisi</label>
+                            <select name="divisi" class="form-control" required>
+                                <option value="">Pilih Divisi</option>
+                                <option value="Ticketing">Ticketing</option>
+                                <option value="LO">LO</option>
+                                <option value="Logistik">Logistik</option>
+                                <option value="Medis">Medis</option>
+                                <option value="Tenant">Tenant</option>
+                                <option value="Floor Area">Floor Area</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Berikan alasan kenapa harus gabung menjadi tim pengendali pesta</label>`
+                            <textarea name="reason" id="reason" class="form-control" required></textarea>
+                        </div>
+                        <div class="form-group mt-4">
                             <label for="phone">CV</label>
                             <input type="file" class="form-control" id="cv" name="cv" placeholder="cv"
                                 accept="application/msword,application/pdf,image/*" required>
                             <small class="form-text text-muted">Masukan CV Max 10 MB</small>
                         </div>
-                        <div class="form-group text-center">
+                        <div class="form-group text-center mt-4">
                             <button type="submit" class="btn btn-info" id="btn-submit">Simpan</button>
                         </div>
                     </form>

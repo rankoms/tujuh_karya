@@ -56,6 +56,8 @@ class CrewController extends Controller
 
         $name = $request->name;
         $phone = $request->phone;
+        $reason = $request->reason;
+        $divisi = $request->divisi;
         $namecv = null;
         if ($request->has('cv')) {
             $file = $request->file('cv');
@@ -72,6 +74,8 @@ class CrewController extends Controller
         $volunteer->name = $name;
         $volunteer->cv = $namecv;
         $volunteer->phone = $phone;
+        $volunteer->divisi = $divisi;
+        $volunteer->reason = $reason;
         $volunteer->save();
         return ResponseFormatter::success(null, 'Success');
     }
